@@ -13,12 +13,11 @@
 
     // If clicked is false, keep drawing on page
     let clicked = false
-    // Initial run through array will be from top to down
-    let goingUp = false
+
     // Start array index at 0
     let index = 0
     // Heading down array at first
-    let increment = -2
+    // let increment = -2
 
     const socket = io()
 
@@ -73,27 +72,16 @@
       // in the line's array to server
       else {
 
-        // if index is smaller than or equal to 0, then the 
-        // index must be incremented upwards & start at 0
-        // increment by 2 since we're going up the array
-        if (index <= 0) {
 
-          goingUp = true
-          index = 0
-          increment = 2
 
-        }
 
-        // if index is larger than array then index must increment
-        // down through array & start at max length of points array.
-        // increment by -2 since we're going down the array
-        else if (index > line.points().length) {
 
-          index = 0
-          increment = 2
-          goingUp = true
+        index = 0
+        increment = 2
 
-        }
+
+
+
 
 
 

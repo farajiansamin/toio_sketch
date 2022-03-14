@@ -28,11 +28,11 @@ let cube2_angle;
 
 async function main() {
 
-  const cubess = await new NearScanner(2).start()
+  const cubes = await new NearScanner(2).start()
 
 
-  const cube1 = cubess[0].connect()
-  const cube2 = cubess[1].connect()
+  const cube1 = cubes[0].connect()
+  const cube2 = cubes[1].connect()
 
   console.log('connected')
 
